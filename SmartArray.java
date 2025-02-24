@@ -73,14 +73,24 @@ public class SmartArray {
 		System.out.println(flippedArray);
 	}
 	
+	public void insert(Integer index,SmartArray insertedArray) {	
+		if(index>=0 && index<=array.size()) {
+		      ArrayList newKeys = insertedArray.array;
+		      for(int i=0;i<newKeys.size();i++) {
+		    	  
+		      }
+		}
+		
+	}
+	
 	
 	public static void main(String[] args) {
 		SmartArray array1 = new SmartArray();
 		array1.addElement(1, "Anshu Pandey");
 		array1.addElement(2, "Anmol Pandey");
 		array1.addElement(3, "Anubhav Tiwari");
-		array1.addElement(4, "Gaurav Mishra");
-		array1.addElement(5, "Prakhar Mishra");
+		array1.addElement(6, "Gaurav Mishra");
+		array1.addElement(7, "Prakhar Mishra");
 		
 		
 		System.out.println("Add Element: "+array1.showAllElements());
@@ -95,8 +105,15 @@ public class SmartArray {
 	
 		array1.flip();
 		
+		// Second Array
+		SmartArray array2 = new SmartArray();
+		array2.addElement(4, "Himanshu Tiwari");
+		array2.addElement(5, "Manas Mani Mihsra");
+		
 	
-	
+		array1.insert(3, array2);
+		System.out.println("After insertion :"+array1.showAllElements());
+	    
 	
 	
 	
