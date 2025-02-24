@@ -64,6 +64,15 @@ public class SmartArray {
 		return null;
 	}
 	
+	public void flip() {
+		ArrayList flippedArray = new ArrayList();
+		for(Integer key:array) {
+			flippedArray.add(key);
+//			System.out.println(key);
+		}
+		System.out.println(flippedArray);
+	}
+	
 	
 	public static void main(String[] args) {
 		SmartArray array1 = new SmartArray();
@@ -84,7 +93,8 @@ public class SmartArray {
 		
 		System.out.println("Slice (2,4):"+array1.slice(2, 4));
 	
-	
+		array1.flip();
+		
 	
 	
 	
